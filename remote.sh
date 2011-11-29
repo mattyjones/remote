@@ -17,7 +17,7 @@ declare ServerList="/home/matty/bin/scripts/remote/ServerList.txt" #the file cre
 declare LocalSharedDisk="$HOME" #set the directory to share with the remote host
 declare SharedDiskName="$USER" #the name of the shared disk on the remote system
 declare Resolution="1024x768" #the desired resolution, replace -g $Resolution with -f for full screen
-declare UserName="matthew jones" #the desired username
+declare UserName="" #the desired username
 
 set $(grep $Input $ServerList | awk '{print $2}') #find the server name in the file and get the IP address
 declare RemoteServer=$1 #set the IP address from the above statement
