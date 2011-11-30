@@ -14,7 +14,7 @@
 declare temp="temp.txt" #temp file, nothing special
 declare OutputFile="ServerList.txt" #the name of the file to be created
 #declare Arg="$1" #commanline argument
-declare ServerConnect="$2" #the server to connect to
+declare ServerConnect= #"$OPTARG" #the server to connect to
 declare ServerList="/home/matty/bin/scripts/remote/ServerList.txt" #the file created by MRConversion used for the translation
 declare LocalSharedDisk="$HOME" #set the directory to share with the remote host
 declare SharedDiskName="$USER" #the name of the shared disk on the remote system
@@ -96,17 +96,23 @@ echo
 
 #----------end functions----------#
 
-if [ "$1" = "-c | --connect" ]
-	then connect_server
-
-elif [ "$1" = "-u | --update" ]
-	then check_list
-
-elif [ "$1" = "-h | --help" ]
-	then help
-
-elif [ "$1" = "-v | --version" ]
-	then version
-
-else help
-fi
+while getopts "c:uh" Option
+do
+  case $Option in
+	c)
+        echo "c was pressed"
+        ServerConnect="$OPTARG"
+ rdesktop -g $Resolution -r disk:$SharedDiskName=$LocalSharedDisk -u "$UserName" -0 -T $ServerConnect -N $RemoteServer & 
+        ;;
+    u)
+        check_list
+        ;;
+	h)
+        help
+        ;;
+    v)
+        version
+        ;;
+   esac    
+done
+#shift $(($OPTIND - 1))
