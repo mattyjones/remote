@@ -22,7 +22,7 @@ ex. user enters db and servers are in the form xx-db-xx and it will open all db 
 in seperate windows
 
 remote-testing.sh
---for testing, this mat or may not working depending on the day
+--for testing, this may or may not working depending on the day
 
 COPYING.txt
 --copyright infomation

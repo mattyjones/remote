@@ -66,5 +66,3 @@ else
 update_list #create a new file/check the current file
 
 fi
-
-echo "this is done"
