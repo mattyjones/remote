@@ -8,7 +8,6 @@
 # in seperate windows
 #
 #matt jones
-#urlugal@gmail.com 
 #updated 12/02/11
 #copyright GPL v2
 
