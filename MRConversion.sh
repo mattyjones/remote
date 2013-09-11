@@ -5,7 +5,6 @@
 # which matches the hostname to the IP and launches rdesktop with a specific set of opitions
 #
 #matt jones
-#urlugal@gmail.com 
 #updated 11/28/11
 #copyright GPL v2
 
