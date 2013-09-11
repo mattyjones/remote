@@ -6,7 +6,6 @@
 # two columns: hostname  IP Address.
 #
 #matt jones
-#urlugal@gmail.com 
 #updated 11/28/11
 #copyright GPL v2
 
