@@ -4,7 +4,7 @@
 # and creates a two-column list in a text file.  This file is then read by remote.sh 
 # which matches the hostname to the IP and launches rdesktop with a specific set of opitions
 #
-#matt jones
+# Matt Jones caffeinatedengineering@gmail.com
 #updated 11/28/11
 #copyright GPL v2
 

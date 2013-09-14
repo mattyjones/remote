@@ -5,7 +5,7 @@
 # the script MRConversion.  You can use your own file as well, the format is 
 # two columns: hostname  IP Address.
 #
-#matt jones
+# Matt Jones caffeinatedengineering@gmail.com
 #updated 11/28/11
 #copyright GPL v2
 

@@ -7,7 +7,7 @@
 # ex. user enters db and servers are in the form xx-db-xx and it will open all db servers 
 # in seperate windows
 #
-#matt jones
+# Matt Jones caffeinatedengineering@gmail.com
 #updated 12/02/11
 #copyright GPL v2
 
